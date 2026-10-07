@@ -1,0 +1,8 @@
+@host = http://localhost:5193
+
+### Best 10 stories
+GET {{host}}/api/beststories?n=10
+Accept: application/json
+
+### Invalid n -> 400
+GET {{host}}/api/beststories?n=0
